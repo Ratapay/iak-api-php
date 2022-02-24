@@ -29,10 +29,10 @@ abstract class IAK
     {
         $envDirectory = FileHelper::getAbsolutePathOfAncestorFile(self::DOT_ENV);
         
-        if (file_exists($envDirectory . '/' . self::DOT_ENV)) {
-            $dotEnv = Dotenv::createMutable(FileHelper::getAbsolutePathOfAncestorFile(self::DOT_ENV));
-            $dotEnv->load();
-        }
+//         if (file_exists($envDirectory . '/' . self::DOT_ENV)) {
+//             $dotEnv = Dotenv::createMutable(FileHelper::getAbsolutePathOfAncestorFile(self::DOT_ENV));
+//             $dotEnv->load();
+//         }
     }
 
     private function setCredential($data)
